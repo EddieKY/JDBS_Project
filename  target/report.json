@@ -1,0 +1,88 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Example",
+        "description": "",
+        "id": "teacher-adding-feature;example",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 634389,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on Cybertektraining page",
+            "match": {
+              "location": "step123.user_is_on_Cybertektraining_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50982,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User starts add new Teacher/Student profile",
+            "match": {
+              "location": "step123.user_starts_add_new_Teacher_Student_profile()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30955,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User starts to fill Teacher/Student information",
+            "match": {
+              "location": "step123.user_starts_to_fill_Teacher_Student_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19434,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User sees created profile",
+            "match": {
+              "location": "step123.user_sees_created_profile()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@teacher"
+          }
+        ]
+      }
+    ],
+    "name": "Teacher adding feature",
+    "description": "",
+    "id": "teacher-adding-feature",
+    "keyword": "Feature",
+    "uri": "src/test/features/Cucumber.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
