@@ -12,20 +12,17 @@
         "steps": [
           {
             "result": {
-              "duration": 450350,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
             "name": "User is on Cybertektraining page",
-            "match": {
-              "location": "step123.user_is_on_Cybertektraining_page()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 33586,
-              "status": "passed"
+              "duration": 14137,
+              "status": "skipped"
             },
             "line": 9,
             "name": "User starts add new Teacher/Student profile",
@@ -36,8 +33,8 @@
           },
           {
             "result": {
-              "duration": 13804,
-              "status": "passed"
+              "duration": 7864,
+              "status": "skipped"
             },
             "line": 10,
             "name": "User starts to fill Teacher/Student information",
@@ -48,8 +45,8 @@
           },
           {
             "result": {
-              "duration": 11909,
-              "status": "passed"
+              "duration": 6453,
+              "status": "skipped"
             },
             "line": 11,
             "name": "User sees created profile",
