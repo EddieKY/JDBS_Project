@@ -1,35 +1,46 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 7,
-        "name": "Example",
+        "line": 3,
+        "name": "JDBC creatinggg knowledge",
         "description": "",
-        "id": "teacher-adding-feature;example",
+        "id": "jdbc-training;jdbc-creatinggg-knowledge",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 12138848367,
+=======
               "duration": 713593,
+>>>>>>> master
               "status": "passed"
             },
-            "line": 8,
-            "name": "User is on Cybertektraining page",
+            "line": 5,
+            "name": "Student on the CybertekTrainingg page",
             "match": {
-              "location": "step123.user_is_on_Cybertektraining_page()"
+              "location": "student_steps.student_on_the_CybertekTrainingg_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 598544811,
+=======
               "duration": 86928,
+>>>>>>> master
               "status": "passed"
             },
-            "line": 9,
-            "name": "User starts add new Teacher/Student profile",
+            "line": 6,
+            "name": "Student adds new student page",
             "match": {
+<<<<<<< HEAD
+              "location": "student_steps.student_adds_new_student_page()"
+=======
               "location": "step123.user_starts_add_new_Teacher_Student_profile()"
             },
             "keyword": "When "
@@ -43,46 +54,39 @@
             "name": "User starts to fill Teacher/Student information",
             "match": {
               "location": "step123.user_starts_to_fill_Teacher_Student_information()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 3346928257,
+=======
               "duration": 5793387845,
+>>>>>>> master
               "status": "passed"
             },
-            "line": 11,
-            "name": "User sees created profile",
+            "line": 7,
+            "name": "Student fills all the required information and saves it",
             "match": {
-              "location": "step123.user_sees_created_profile()"
+              "location": "student_steps.student_fills_all_the_required_information_and_saves_it()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
-          },
-          {
-            "name": "@teacher"
+            "name": "@student"
           }
         ]
       }
     ],
-    "name": "Teacher adding feature",
+    "name": "JDBC training",
     "description": "",
-    "id": "teacher-adding-feature",
+    "id": "jdbc-training",
     "keyword": "Feature",
-    "uri": "src/test/features/Cucumber.feature",
-    "tags": [
-      {
-        "name": "@smoke",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "src/test/features/student.feature",
+    "tags": []
   }
 ]
