@@ -22,15 +22,16 @@ public class step123 {
     @When("User starts add new Teacher\\/Student profile")
     public void user_starts_add_new_Teacher_Student_profile() {
 
-        System.out.println("Test 2");
+//        System.out.println("Test 2");
 
+        System.out.println();
     }
 
     @When("User starts to fill Teacher\\/Student information")
     public void user_starts_to_fill_Teacher_Student_information() {
 
 
-        System.out.println("Test 3");
+//        System.out.println("Test 3");
 
     }
 
@@ -41,7 +42,7 @@ public class step123 {
        List<Map<String,Object>> justName = DBUtility.executeSQLquery("select FIRST_NAME from teacher");
 
        for(Map map:justName){
-           System.out.println(map.get("FIRST_NAME"));
+           System.out.println("First name : "+ map.get("FIRST_NAME"));
        }
 
     }
