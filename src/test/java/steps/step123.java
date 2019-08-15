@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 
 public class step123 {
 
-    @Given("User is on Cybertek training page")
+    @Given("User is on Cybertektraining page")
     public void user_is_on_Cybertektraining_page() {
 
 
