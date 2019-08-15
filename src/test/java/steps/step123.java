@@ -3,6 +3,12 @@ package steps;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import utilities.Config;
+import utilities.DBUtility;
+
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 public class step123 {
 
@@ -29,11 +35,15 @@ public class step123 {
     }
 
     @Then("User sees created profile")
-    public void user_sees_created_profile() {
+    public void user_sees_created_profile() throws SQLException {
 
+        DBUtility.openConnection(Config.getProperty("dbType"));
+       List<Map<String,Object>> justName = DBUtility.executeSQLquery("select FIRST_NAME from teacher");
 
+       for(Map map:justName){
+           System.out.println(map.get("FIRST_NAME"));
+       }
 
     }
-
 
 }
