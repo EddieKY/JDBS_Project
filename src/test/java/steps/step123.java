@@ -6,9 +6,7 @@ import cucumber.api.java.en.When;
 
 public class step123 {
 
-
-
-    @Given("User is on Cybertektraining page")
+    @Given("User is on Cybertek training page")
     public void user_is_on_Cybertektraining_page() {
 
 
@@ -18,15 +16,21 @@ public class step123 {
     @When("User starts add new Teacher\\/Student profile")
     public void user_starts_add_new_Teacher_Student_profile() {
 
+
+
     }
 
     @When("User starts to fill Teacher\\/Student information")
     public void user_starts_to_fill_Teacher_Student_information() {
 
+
+
     }
 
     @Then("User sees created profile")
     public void user_sees_created_profile() {
+
+
 
     }
 

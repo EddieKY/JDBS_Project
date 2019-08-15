@@ -6,7 +6,6 @@ import java.util.Properties;
 
 public class Config {
 
-
     private static Properties p = new Properties();
 
     static{
@@ -20,7 +19,6 @@ public class Config {
         }
 
     }
-
 
 
     public static String getProperty(String keyword){

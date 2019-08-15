@@ -8,11 +8,9 @@ import java.util.Map;
 
 public class DBUtility {
 
-
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
-
 
     public static void openConnection(String dbType) throws SQLException {
 
@@ -26,6 +24,7 @@ public class DBUtility {
             default:
                 connection = null;
         }
+
     }
 
 
@@ -60,4 +59,5 @@ public class DBUtility {
         statement.close();
         resultSet.close();
     }
+
 }
