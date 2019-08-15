@@ -12,7 +12,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 12138848367,
+=======
+              "duration": 713593,
+>>>>>>> master
               "status": "passed"
             },
             "line": 5,
@@ -24,19 +28,43 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 598544811,
+=======
+              "duration": 86928,
+>>>>>>> master
               "status": "passed"
             },
             "line": 6,
             "name": "Student adds new student page",
             "match": {
+<<<<<<< HEAD
               "location": "student_steps.student_adds_new_student_page()"
+=======
+              "location": "step123.user_starts_add_new_Teacher_Student_profile()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25792,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User starts to fill Teacher/Student information",
+            "match": {
+              "location": "step123.user_starts_to_fill_Teacher_Student_information()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3346928257,
+=======
+              "duration": 5793387845,
+>>>>>>> master
               "status": "passed"
             },
             "line": 7,
