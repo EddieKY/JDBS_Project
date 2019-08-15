@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 //        "html:target/cucumber",
         features = "src/test/features",
         glue = "steps",
-        tags = "@teacher",
+        tags = "@student",
         dryRun = false
 //        true    false
 
