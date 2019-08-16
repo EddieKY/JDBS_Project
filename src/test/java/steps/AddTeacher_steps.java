@@ -104,17 +104,15 @@ public class AddTeacher_steps {
 
            if(Fname.equals(map.get("FIRST_NAME"))){
 
-               Assert.assertTrue("UI and dataBase: equal",true);
-//
-               System.out.println("Pass: User was created in DataBase");
 
-           }else{
-               Assert.assertFalse("UI and dataBase: NOT equal",false);
-
-
+               System.out.println("Expected First Name: "+Fname);
+               System.out.println("Actual First Name: "+ map.get("FIRST_NAME"));
+               Assert.assertEquals(Fname, map.get("FIRST_NAME"));
            }
 
        }
+
+        DBUtility.closeConnection();
     }
 
     @Then("User deletes profile")
@@ -138,6 +136,8 @@ public class AddTeacher_steps {
 
         WebElement sub = driver.findElement(By.xpath("//button[@type='submit']"));
         sub.click();
+
+        driver.close();
 
     }
 
