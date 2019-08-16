@@ -1,45 +1,83 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/features/student.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/features/Teacher.feature");
 formatter.feature({
-  "name": "JDBC training",
+  "name": "Teacher adding feature",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@smoke"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "JDBC creatinggg knowledge",
+  "name": "Example",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@student"
+      "name": "@smoke"
+    },
+    {
+      "name": "@teacher"
     }
   ]
 });
 formatter.step({
-  "name": "Student on the CybertekTrainingg page",
+  "name": "User is on Cybertektraining page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "student_steps.student_on_the_CybertekTrainingg_page()"
+  "location": "AddTeacher_steps.user_is_on_Cybertektraining_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Student adds new student page",
+  "name": "User starts add new Teacher/Student profile",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AddTeacher_steps.user_starts_add_new_Teacher_Student_profile()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User starts to fill Teacher/Student information",
   "keyword": "And "
 });
 formatter.match({
-  "location": "student_steps.student_adds_new_student_page()"
+  "location": "AddTeacher_steps.user_starts_to_fill_Teacher_Student_information()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Student fills all the required information and saves it",
+  "name": "User sees created profile",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "student_steps.student_fills_all_the_required_information_and_saves_it()"
+  "location": "AddTeacher_steps.user_sees_created_profile()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User validates UI and DataBase",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AddTeacher_steps.user_validates_UI_and_DataBase()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User deletes profile",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AddTeacher_steps.user_deletes_profile()"
 });
 formatter.result({
   "status": "passed"
