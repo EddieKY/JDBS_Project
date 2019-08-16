@@ -22,7 +22,7 @@ public class student_steps {
 //     Driver.getDriver().get(Config.getProperty("url"));  // --- opens the website, gets url from config.properties
 //        DbUtility.openConnection(Config.getProperty("dbType"));
 
-        Driver.getDriver().get(Config.getProperty("url"));
+
         sp.studentArrow.click();
     }
 

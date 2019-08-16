@@ -1,92 +1,112 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "JDBC creatinggg knowledge",
+        "line": 7,
+        "name": "Example",
         "description": "",
-        "id": "jdbc-training;jdbc-creatinggg-knowledge",
+        "id": "teacher-adding-feature;example",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 12138848367,
-=======
-              "duration": 713593,
->>>>>>> master
+              "duration": 3393599067,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Student on the CybertekTrainingg page",
+            "line": 8,
+            "name": "User is on Cybertektraining page",
             "match": {
-              "location": "student_steps.student_on_the_CybertekTrainingg_page()"
+              "location": "AddTeacher_steps.user_is_on_Cybertektraining_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 598544811,
-=======
-              "duration": 86928,
->>>>>>> master
+              "duration": 462730439,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Student adds new student page",
+            "line": 9,
+            "name": "User starts add new Teacher/Student profile",
             "match": {
-<<<<<<< HEAD
-              "location": "student_steps.student_adds_new_student_page()"
-=======
-              "location": "step123.user_starts_add_new_Teacher_Student_profile()"
+              "location": "AddTeacher_steps.user_starts_add_new_Teacher_Student_profile()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 25792,
+              "duration": 1976309659,
               "status": "passed"
             },
             "line": 10,
             "name": "User starts to fill Teacher/Student information",
             "match": {
-              "location": "step123.user_starts_to_fill_Teacher_Student_information()"
->>>>>>> master
+              "location": "AddTeacher_steps.user_starts_to_fill_Teacher_Student_information()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 3346928257,
-=======
-              "duration": 5793387845,
->>>>>>> master
+              "duration": 53427,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Student fills all the required information and saves it",
+            "line": 11,
+            "name": "User sees created profile",
             "match": {
-              "location": "student_steps.student_fills_all_the_required_information_and_saves_it()"
+              "location": "AddTeacher_steps.user_sees_created_profile()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5726778121,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User validates UI and DataBase",
+            "match": {
+              "location": "AddTeacher_steps.user_validates_UI_and_DataBase()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 670758737,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User deletes profile",
+            "match": {
+              "location": "AddTeacher_steps.user_deletes_profile()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@student"
+            "name": "@smoke"
+          },
+          {
+            "name": "@teacher"
           }
         ]
       }
     ],
-    "name": "JDBC training",
+    "name": "Teacher adding feature",
     "description": "",
-    "id": "jdbc-training",
+    "id": "teacher-adding-feature",
     "keyword": "Feature",
-    "uri": "src/test/features/student.feature",
-    "tags": []
+    "uri": "src/test/features/Teacher.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
