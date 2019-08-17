@@ -20,7 +20,6 @@ public class DBUtility {
                         Config.getProperty("oracleUsername"),
                         Config.getProperty("oraclePassword"));
                 break;
-
             default:
                 connection = null;
         }
@@ -45,8 +44,9 @@ public class DBUtility {
                 }
                 myTable.add(map);
             }
-        } catch (SQLException e) {
-
+            return myTable;
+        }
+        catch (SQLException e) {
             System.out.println("Failed to open connection!");
         }
 

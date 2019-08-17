@@ -12,11 +12,7 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 12138848367,
-=======
-              "duration": 713593,
->>>>>>> master
+              "duration": 4978412299,
               "status": "passed"
             },
             "line": 5,
@@ -28,49 +24,38 @@
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 598544811,
-=======
-              "duration": 86928,
->>>>>>> master
+              "duration": 546296666,
               "status": "passed"
             },
             "line": 6,
             "name": "Student adds new student page",
             "match": {
-<<<<<<< HEAD
               "location": "student_steps.student_adds_new_student_page()"
-=======
-              "location": "step123.user_starts_add_new_Teacher_Student_profile()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 25792,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User starts to fill Teacher/Student information",
-            "match": {
-              "location": "step123.user_starts_to_fill_Teacher_Student_information()"
->>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 3346928257,
-=======
-              "duration": 5793387845,
->>>>>>> master
+              "duration": 3006630788,
               "status": "passed"
             },
             "line": 7,
             "name": "Student fills all the required information and saves it",
             "match": {
               "location": "student_steps.student_fills_all_the_required_information_and_saves_it()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat utilities.DBUtility.executeSQLquery(DBUtility.java:32)\n\tat steps.student_steps.verify_if_student_is_in_system(student_steps.java:79)\n\tat ✽.Verify if student is in system(src/test/features/student.feature:8)\n",
+              "duration": 597415532,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Verify if student is in system",
+            "match": {
+              "location": "student_steps.verify_if_student_is_in_system()"
             },
             "keyword": "Then "
           }
