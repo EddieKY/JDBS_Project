@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4978412299,
+              "duration": 5477555383,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 546296666,
+              "duration": 499901779,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 3006630788,
+              "duration": 3360880501,
               "status": "passed"
             },
             "line": 7,
@@ -48,14 +48,25 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\n\tat utilities.DBUtility.executeSQLquery(DBUtility.java:32)\n\tat steps.student_steps.verify_if_student_is_in_system(student_steps.java:79)\n\tat ✽.Verify if student is in system(src/test/features/student.feature:8)\n",
-              "duration": 597415532,
-              "status": "failed"
+              "duration": 726733785,
+              "status": "passed"
             },
             "line": 8,
-            "name": "Verify if student is in system",
+            "name": "Verify if student is in UI",
             "match": {
-              "location": "student_steps.verify_if_student_is_in_system()"
+              "location": "student_steps.verify_if_student_is_in_UI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 807002096,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify is user is in our database",
+            "match": {
+              "location": "student_steps.verify_is_user_is_in_our_database()"
             },
             "keyword": "Then "
           }

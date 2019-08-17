@@ -31,6 +31,7 @@ public class student_steps {
 
     @Given("Student adds new student page")
     public void student_adds_new_student_page() {
+
         sp.addStudent.click();
     }
 
@@ -63,36 +64,39 @@ public class student_steps {
         sp.zipCode.sendKeys("5");
         sp.submitButton.click();
     }
-//
-//    @Then("Verify if student is in system")
-//    public void verify_if_student_is_in_system() throws SQLException {
-//
-//        for (WebElement studentList:  sp.listOfStudents) {
-//            if(studentList.getText().equalsIgnoreCase(expectedfirstName)){
-//                System.out.println("PASSED!");
+
+    @Then("Verify if student is in UI")
+    public void verify_if_student_is_in_UI() throws SQLException {
+
+        for (WebElement studentList : sp.listOfStudents) {
+            if (studentList.getText().equalsIgnoreCase(expectedfirstName)) {
+                System.out.println("PASSED!");
+                break;
+            }
+        }
+    }
+
+    @Then("Verify is user is in our database")
+    public void verify_is_user_is_in_our_database() throws SQLException {
+
+        DBUtility.openConnection(Config.getProperty("dbType"));
+
+        List<Map<String, Object>> studentData = DBUtility.executeSQLquery("select FIRST_NAME from student");
+        List<Object> firsNames = new ArrayList<>();
+
+        for (Map<String, Object> m : studentData) {
+            firsNames.add(m.get("FIRST_NAME"));
+        }
+
+        Assert.assertTrue(firsNames.contains(expectedfirstName));
+//        boolean check = false;
+//            if ((m.get("FIRST_NAME")).equals(expectedfirstName)) {
+//                check = true;
 //                break;
 //            }
 //        }
-//
-//
-//        DBUtility.openConnection("dbType");
-//        List<Map<String, Object>> studentData = DBUtility.executeSQLquery("select * from student");
-////        List<Map<String, Object>> studentData = DBUtility.executeSQLquery("select FIRST_NAME from student");
-////        List<Object> firsNames = new ArrayList<>();
-//////        boolean check = false;
-////        for (Map<String, Object> m : studentData) {
-////
-////        firsNames.add(m.get("FIRST_NAME"));
-////
-////         }
-////
-////        Assert.assertTrue(firsNames.contains(expectedfirstName));
-////            if ((m.get("FIRST_NAME")).equals(expectedfirstName)) {
-////                check = true;
-////                break;
-////            }
-////        }
-////        Assert.assertTrue(check);
-//        DBUtility.closeConnection();
-//    }
+//        Assert.assertTrue(check);
+        DBUtility.closeConnection();
+    }
 }
+
