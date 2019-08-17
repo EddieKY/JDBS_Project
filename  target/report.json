@@ -1,112 +1,65 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 7,
-        "name": "Example",
+        "line": 3,
+        "name": "JDBC creatinggg knowledge",
         "description": "",
-        "id": "teacher-adding-feature;example",
+        "id": "jdbc-training;jdbc-creatinggg-knowledge",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4240376424,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//span[@class\u003d\u0027menu-arrow\u0027])[2]\"}\n  (Session info: chrome\u003d76.0.3809.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-EKV948CR\u0027, ip: \u002710.1.10.148\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\\Users\\Gabriel\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57257}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7307311c19fca22d80bc2aa23765bc81\n*** Element info: {Using\u003dxpath, value\u003d(//span[@class\u003d\u0027menu-arrow\u0027])[2]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.click(Unknown Source)\r\n\tat steps.student_steps.student_on_the_CybertekTrainingg_page(student_steps.java:26)\r\n\tat ✽.Student on the CybertekTrainingg page(src/test/features/student.feature:5)\r\n",
+              "duration": 17333404999,
+              "status": "failed"
             },
-            "line": 8,
-            "name": "User is on Cybertektraining page",
+            "line": 5,
+            "name": "Student on the CybertekTrainingg page",
             "match": {
-              "location": "AddTeacher_steps.user_is_on_Cybertektraining_page()"
+              "location": "student_steps.student_on_the_CybertekTrainingg_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 475575083,
-              "status": "passed"
+              "duration": 11801,
+              "status": "skipped"
             },
-            "line": 9,
-            "name": "User starts add new Teacher/Student profile",
+            "line": 6,
+            "name": "Student adds new student page",
             "match": {
-              "location": "AddTeacher_steps.user_starts_add_new_Teacher_Student_profile()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2040475595,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User starts to fill Teacher/Student information",
-            "match": {
-              "location": "AddTeacher_steps.user_starts_to_fill_Teacher_Student_information()"
+              "location": "student_steps.student_adds_new_student_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 40270,
-              "status": "passed"
+              "duration": 6300,
+              "status": "skipped"
             },
-            "line": 11,
-            "name": "User sees created profile",
+            "line": 7,
+            "name": "Student fills all the required information and saves it",
             "match": {
-              "location": "AddTeacher_steps.user_sees_created_profile()"
+              "location": "student_steps.student_fills_all_the_required_information_and_saves_it()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5795081358,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User validates UI and DataBase",
-            "match": {
-              "location": "AddTeacher_steps.user_validates_UI_and_DataBase()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 880825873,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User deletes profile",
-            "match": {
-              "location": "AddTeacher_steps.user_deletes_profile()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
-          },
-          {
-            "name": "@teacher"
+            "name": "@student"
           }
         ]
       }
     ],
-    "name": "Teacher adding feature",
+    "name": "JDBC training",
     "description": "",
-    "id": "teacher-adding-feature",
+    "id": "jdbc-training",
     "keyword": "Feature",
-    "uri": "src/test/features/Teacher.feature",
-    "tags": [
-      {
-        "name": "@smoke",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "src/test/features/student.feature",
+    "tags": []
   }
 ]
