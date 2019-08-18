@@ -3,16 +3,16 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "Validating data in DB",
+        "line": 25,
+        "name": "Creating, validating and deleting data in Student DB",
         "description": "",
-        "id": "creating--validating-and-deleting-data-in-student-db;validating-data-in-db",
+        "id": "end-to-end-verification-of-db;creating--validating-and-deleting-data-in-student-db;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6975905899,
+              "duration": 5262176400,
               "status": "passed"
             },
             "line": 5,
@@ -24,50 +24,564 @@
           },
           {
             "result": {
-              "duration": 575315200,
+              "duration": 445721800,
               "status": "passed"
             },
             "line": 6,
             "name": "Student adds new student on CybertekTraining page",
             "match": {
-              "location": "student_steps.student_adds_new_student_on_CybertekTraining_page()"
+              "location": "GabiStudent_steps.student_adds_new_student_on_CybertekTraining_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3738665401,
+              "duration": 135748800,
               "status": "passed"
             },
             "line": 7,
-            "name": "Student fills all the required information and saves it on Cybertek page",
+            "name": "Student should add first name \"JohnyY\"",
             "match": {
-              "location": "student_steps.student_fills_all_the_required_information_and_saves_it_on_Cybertek_page()"
+              "arguments": [
+                {
+                  "val": "\"JohnyY\"",
+                  "offset": 30
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_first_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.student_steps.verify_if_student_is_in_UI_of_Cybertek_page(student_steps.java:139)\r\n\tat ✽.Verify if student is in UI of Cybertek page(src/test/features/GabiStudent.feature:8)\r\n",
-              "duration": 2605300,
-              "status": "pending"
+              "duration": 105079400,
+              "status": "passed"
             },
             "line": 8,
-            "name": "Verify if student is in UI of Cybertek page",
+            "name": "Student should add last name \"Doe\"",
             "match": {
-              "location": "student_steps.verify_if_student_is_in_UI_of_Cybertek_page()"
+              "arguments": [
+                {
+                  "val": "\"Doe\"",
+                  "offset": 29
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_last_name(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10000,
-              "status": "skipped"
+              "duration": 323791100,
+              "status": "passed"
             },
             "line": 9,
-            "name": "Verify is user is in our Cybertek database",
+            "name": "Student should add \"johndoe@yahoo.com\" and joining date",
             "match": {
-              "location": "student_steps.verify_is_user_is_in_our_Cybertek_database()"
+              "arguments": [
+                {
+                  "val": "\"johndoe@yahoo.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_and_joining_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96548800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Student should add subject \"fotball\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fotball\"",
+                  "offset": 27
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_subject(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54714100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Student should add phone number \"551\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"551\"",
+                  "offset": 32
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164584800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Student should add gender and \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123\"",
+                  "offset": 30
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_gender_and(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 204819000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Student should add birthDate and \"Sport\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sport\"",
+                  "offset": 33
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_birthDate_and(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110110800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Student should add batch and section \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3\"",
+                  "offset": 37
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_batch_and_section(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90210300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Student should add adress \"123 main street\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123 main street\"",
+                  "offset": 26
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_adress(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 683431000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Student should add Company Information",
+            "match": {
+              "location": "GabiStudent_steps.student_should_add_Company_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67073000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Student submits application",
+            "match": {
+              "location": "GabiStudent_steps.student_submits_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 764947100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify if student \"JohnyY\" is in UI of Cybertek page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JohnyY\"",
+                  "offset": 18
+                }
+              ],
+              "location": "GabiStudent_steps.verify_if_student_is_in_UI_of_Cybertek_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 645706000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Match firstName \"JohnyY\", lastName \"Doe\", subject \"fotball\", admisionNo \"123\" and  major \"Sport\" with DB",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JohnyY\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Doe\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"fotball\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"Sport\"",
+                  "offset": 89
+                }
+              ],
+              "location": "GabiStudent_steps.match_firstName_lastName_subject_admisionNo_and_major_with_DB(String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 547206300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "After verification, Student delete profile by first name \"JohnyY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JohnyY\"",
+                  "offset": 57
+                }
+              ],
+              "location": "GabiStudent_steps.after_verification_Student_delete_profile_by_first_name(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@g"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Creating, validating and deleting data in Student DB",
+        "description": "",
+        "id": "end-to-end-verification-of-db;creating--validating-and-deleting-data-in-student-db;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 404717100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Student on the CybertekTrainingg page",
+            "match": {
+              "location": "student_steps.student_on_the_CybertekTrainingg_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 344897300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Student adds new student on CybertekTraining page",
+            "match": {
+              "location": "GabiStudent_steps.student_adds_new_student_on_CybertekTraining_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99923800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Student should add first name \"Gogu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gogu\"",
+                  "offset": 30
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_first_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148224200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Student should add last name \"Stanescu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Stanescu\"",
+                  "offset": 29
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_last_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 283443400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Student should add \"gogu@gmail.com\" and joining date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gogu@gmail.com\"",
+                  "offset": 19
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_and_joining_date(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124956300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Student should add subject \"anysubject\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anysubject\"",
+                  "offset": 27
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_subject(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56660400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Student should add phone number \"456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"456\"",
+                  "offset": 32
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122653900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Student should add gender and \"321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"321\"",
+                  "offset": 30
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_gender_and(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214265200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Student should add birthDate and \"Actor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Actor\"",
+                  "offset": 33
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_birthDate_and(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129610000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Student should add batch and section \"9\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9\"",
+                  "offset": 37
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_batch_and_section(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101406400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Student should add adress \"147 minor ave.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"147 minor ave.\"",
+                  "offset": 26
+                }
+              ],
+              "location": "GabiStudent_steps.student_should_add_adress(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 673468200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Student should add Company Information",
+            "match": {
+              "location": "GabiStudent_steps.student_should_add_Company_Information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64570900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Student submits application",
+            "match": {
+              "location": "GabiStudent_steps.student_submits_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 554043600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify if student \"Gogu\" is in UI of Cybertek page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gogu\"",
+                  "offset": 18
+                }
+              ],
+              "location": "GabiStudent_steps.verify_if_student_is_in_UI_of_Cybertek_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 305902800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Match firstName \"Gogu\", lastName \"Stanescu\", subject \"anysubject\", admisionNo \"321\" and  major \"Actor\" with DB",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gogu\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Stanescu\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"anysubject\"",
+                  "offset": 53
+                },
+                {
+                  "val": "\"321\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"Actor\"",
+                  "offset": 95
+                }
+              ],
+              "location": "GabiStudent_steps.match_firstName_lastName_subject_admisionNo_and_major_with_DB(String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 376490000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "After verification, Student delete profile by first name \"Gogu\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Gogu\"",
+                  "offset": 57
+                }
+              ],
+              "location": "GabiStudent_steps.after_verification_Student_delete_profile_by_first_name(String)"
             },
             "keyword": "Then "
           }
@@ -79,9 +593,9 @@
         ]
       }
     ],
-    "name": "Creating, validating and deleting data in Student DB",
+    "name": "END to END verification of DB",
     "description": "",
-    "id": "creating--validating-and-deleting-data-in-student-db",
+    "id": "end-to-end-verification-of-db",
     "keyword": "Feature",
     "uri": "src/test/features/GabiStudent.feature",
     "tags": []

@@ -99,52 +99,8 @@ public class student_steps {
         DBUtility.closeConnection();
     }
 
-    @Given("Student adds new student on CybertekTraining page")
-    public void student_adds_new_student_on_CybertekTraining_page() {
-        sp.addStudent.click();
-    }
 
-    @Given("Student fills all the required information and saves it on Cybertek page")
-    public void student_fills_all_the_required_information_and_saves_it_on_Cybertek_page() {
 
-        sp.inputName.sendKeys(expectedfirstName);
-        String lastName = faker.name().lastName();
-        sp.inputLastName.sendKeys(lastName);
 
-        String email = expectedfirstName + "." + lastName + "@yahoo.com";
-        sp.inputEmail.sendKeys(email);
-        sp.joinDate.sendKeys("08/14/2015");
-        String passwd = faker.internet().password();
-
-        sp.inputSubject.sendKeys("Football");
-        sp.inputMobile.sendKeys("2");
-        SelectClass.getSelect(sp.selectGender).selectByVisibleText("Male");
-        sp.admission.sendKeys(faker.number().digits(5));
-        sp.birthDate.sendKeys("03/24/2012");
-        sp.major.sendKeys(faker.job().position());
-        SelectClass.getSelect(sp.selectBatch).selectByIndex(1);
-        sp.section.sendKeys(faker.number().digits(7));
-        sp.address.sendKeys(faker.address().fullAddress());
-        sp.companyName.sendKeys(faker.company().name());
-        sp.startDate.sendKeys("05/04/2018");
-        sp.street.sendKeys(faker.address().streetName());
-        sp.state.sendKeys(faker.address().state());
-        sp.title.sendKeys(faker.job().title());
-        sp.city.sendKeys(faker.address().city());
-        sp.zipCode.sendKeys("5");
-        sp.submitButton.click();
-
-    }
-
-    @Given("Verify if student is in UI of Cybertek page")
-    public void verify_if_student_is_in_UI_of_Cybertek_page() {
-
-    }
-
-    @Then("Verify is user is in our Cybertek database")
-    public void verify_is_user_is_in_our_Cybertek_database() {
-        
-
-    }
 }
 
