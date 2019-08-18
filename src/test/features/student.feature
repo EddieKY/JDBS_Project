@@ -4,4 +4,6 @@ Feature: JDBC training
 
     Given Student on the CybertekTrainingg page
     And Student adds new student page
-    Then Student fills all the required information and saves it
+    And Student fills all the required information and saves it
+    And Verify if student is in UI
+    Then Verify is user is in our database
