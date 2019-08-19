@@ -1,46 +1,38 @@
 package pages;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.ListDocument;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import utilities.*;
+import utilities.Driver;
 
 import java.util.*;
 
-public class studentPage {
+
+public class Student2Page {
     public WebDriver driver;
 
-
-    public studentPage(){
-        driver = Driver.getDriver();
-        PageFactory.initElements(driver,this);
-    }
-
+    public Student2Page(){
+      driver = Driver.getDriver();
+     PageFactory.initElements(driver,this);
+ }
     @FindBy (xpath = "(//span[@class='menu-arrow'])[2]")
-    public WebElement studentArrow;
+    public WebElement student;
 
     @FindBy (xpath = "//a[.='Add Student']")
-    public WebElement addStudent;
+    public WebElement addStudents;
 
-    @FindBy (xpath = "//label[.='Firstname']/preceding-sibling::input")
-    public WebElement inputName;
+    @FindBy(xpath="//input[@type='text']")
+    public WebElement firstname;
 
-    @FindBy (xpath = "//label[.='Lastname']/preceding-sibling::input")
-    public WebElement inputLastName;
+    @FindBy(xpath = "(//div[@class='form-group custom-mt-form-group'])[8]/input")
+    public WebElement lastname;
 
     @FindBy (xpath = "//label[.='Email']/preceding-sibling::input")
     public WebElement inputEmail;
 
     @FindBy (xpath = "//label[.='Joining Date']/preceding-sibling::input")
     public WebElement joinDate ;
-
-//    @FindBy (xpath = "//label[.='Password']/preceding-sibling::input")
-//    public WebElement  inputPasswd;
-//
-//    @FindBy (xpath = "//label[.='Comfirm Password']/preceding-sibling::input")
-//    public WebElement confirmPasswd;
 
     @FindBy (xpath = "//label[.='Subject']/preceding-sibling::input")
     public WebElement inputSubject ;
@@ -72,7 +64,7 @@ public class studentPage {
     @FindBy (xpath = " //label[.='Company Name']/preceding-sibling::input")
     public WebElement companyName;
 
-    @FindBy (xpath = "//label[.='Start Date']/preceding-sibling::input")
+    @FindBy(xpath = "//label[.='Start Date']/preceding-sibling::input")
     public WebElement startDate;
 
     @FindBy (xpath = "//label[.='Street (123 N. California, Apt 1)']/preceding-sibling::input")
@@ -91,19 +83,17 @@ public class studentPage {
     @FindBy (xpath = "//label[.='ZipCode']/preceding-sibling::input")
     public WebElement zipCode ;
 
-
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement submitButton;
 
-    @FindBy (xpath = "//div[@class='profile-widget']/h4")
-    public List<WebElement> listOfStudents;
-
-    @FindBy(xpath = "(//div[@class='form-group custom-mt-form-group']/input)[2]")
-    public WebElement firstNameSearch;
-
-    @FindBy(xpath = "//a[@class='btn btn-success btn-block mt-4 mb-2']")
-    public WebElement studentPageSearchButton;
-
+    @FindBy (xpath = "//h5[@class='text-uppercase']")
+    public WebElement allStudents;
 
 
 }
+
+
+
+
+
+

@@ -4,8 +4,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import utilities.Config;
-import utilities.DBUtility;
+import utilities.*;
 
 import java.sql.SQLException;
 import java.util.List;

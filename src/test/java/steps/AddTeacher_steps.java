@@ -13,9 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.AddTeacherPage;
-import utilities.Config;
-import utilities.DBUtility;
-import utilities.Driver;
+import utilities.*;
 
 import java.sql.SQLException;
 import java.util.List;
