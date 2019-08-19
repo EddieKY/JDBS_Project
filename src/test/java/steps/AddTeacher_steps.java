@@ -5,6 +5,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -32,7 +34,14 @@ public class AddTeacher_steps {
     @Given("User is on Cybertektraining page")
     public void user_is_on_Cybertektraining_page()  {
 
+        Response response = RestAssured.get("http://cybertektraining.com/index.html");
+
+        System.out.println(response.statusCode());
+
+//        System.out.println(response.asString());
+
         driver.get(Config.getProperty("CybertekTrainingUrl"));
+
         driver.findElement(By.xpath("(//a[@href='#'])[4]")).click();
 
     }
@@ -98,11 +107,18 @@ public class AddTeacher_steps {
     public void user_validates_UI_and_DataBase() throws SQLException {
 
        DBUtility.openConnection(Config.getProperty("dbType"));
-       List<Map<String,Object>> justName = DBUtility.executeSQLquery("select FIRST_NAME from teacher");
+       List<Map<String,Object>> justName = DBUtility.executeSQLquery("select * from teacher");
 
        for(Map map:justName){
 
            if(Fname.equals(map.get("FIRST_NAME"))){
+
+
+               System.out.println(map.get("LAST_NAME"));
+
+
+               System.out.println(map.get("LAST_NAME"));
+
 
 
                System.out.println("Expected First Name: "+Fname);
