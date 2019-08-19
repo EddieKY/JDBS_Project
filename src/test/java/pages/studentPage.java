@@ -97,4 +97,13 @@ public class studentPage {
 
     @FindBy (xpath = "//div[@class='profile-widget']/h4")
     public List<WebElement> listOfStudents;
+
+    @FindBy(xpath = "(//div[@class='form-group custom-mt-form-group']/input)[2]")
+    public WebElement firstNameSearch;
+
+    @FindBy(xpath = "//a[@class='btn btn-success btn-block mt-4 mb-2']")
+    public WebElement studentPageSearchButton;
+
+
+
 }
