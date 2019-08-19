@@ -1,88 +1,100 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "creat and delete student",
+        "line": 7,
+        "name": "Example",
         "description": "",
-        "id": "validating-creat-and-delete-student;creat-and-delete-student",
+        "id": "teacher-adding-feature;example",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5779235209,
+              "duration": 6291363490,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Student is on Home Page",
+            "line": 8,
+            "name": "User is on Cybertektraining page",
             "match": {
-              "location": "Student2_steps.student_is_on_Home_Page()"
+              "location": "AddTeacher_steps.user_is_on_Cybertektraining_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 757579664,
+              "duration": 509507687,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Student clicks on Students module and Adds student",
+            "line": 9,
+            "name": "User starts add new Teacher/Student profile",
             "match": {
-              "location": "Student2_steps.student_clicks_on_Students_module_and_Adds_student()"
+              "location": "AddTeacher_steps.user_starts_add_new_Teacher_Student_profile()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3241394115,
+              "duration": 2424922805,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Student fill up details information and click on submit",
+            "line": 10,
+            "name": "User starts to fill Teacher/Student information",
             "match": {
-              "location": "Student2_steps.student_fill_up_details_information_and_click_on_submit()"
+              "location": "AddTeacher_steps.user_starts_to_fill_Teacher_Student_information()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 40774204,
+              "duration": 5965796959,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Validate if student is in UI",
+            "line": 11,
+            "name": "User validates UI and DataBase",
             "match": {
-              "location": "Student2_steps.validate_if_student_is_in_UI()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 927940476,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Student verification in UI and database",
-            "match": {
-              "location": "Student2_steps.student_verification_in_UI_and_database()"
+              "location": "AddTeacher_steps.user_validates_UI_and_DataBase()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2072897789,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User deletes profile",
+            "match": {
+              "location": "AddTeacher_steps.user_deletes_profile()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@student2"
+            "name": "@smoke"
+          },
+          {
+            "name": "@teacher"
           }
         ]
       }
     ],
-    "name": "Validating creat and delete student",
+    "name": "Teacher adding feature",
     "description": "",
-    "id": "validating-creat-and-delete-student",
+    "id": "teacher-adding-feature",
     "keyword": "Feature",
-    "uri": "src/test/features/Student2.feature",
-    "tags": []
+    "uri": "src/test/features/Teacher.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
